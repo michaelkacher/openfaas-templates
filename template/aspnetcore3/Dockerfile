@@ -15,11 +15,11 @@ RUN dotnet publish "Server.csproj" -c Release -o /app/publish
 
 FROM openfaas/of-watchdog:0.7.2 as watchdog
 
+FROM base AS final
+
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
-
-FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 

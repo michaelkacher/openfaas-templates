@@ -10,8 +10,8 @@
 ## Getting Started
 * Create a new ASP.NET Core Function
 ```
-$ faas template pull https://github.com/michaelkacher/aspnetcore3-template
-$ faas-cli new --lang aspnetcore3 my-func.yml
+$ faas-cli template pull https://github.com/michaelkacher/openfaas-templates
+$ faas-cli new --lang aspnetcore3 my-func
 ```
 * Edit the function
 * To run locally

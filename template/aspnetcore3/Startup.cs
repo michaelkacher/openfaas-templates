@@ -23,7 +23,7 @@ namespace Server
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
+                endpoints.MapPost("/", async context =>
                 {
                     
                     try
