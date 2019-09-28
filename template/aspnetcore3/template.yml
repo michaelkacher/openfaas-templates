@@ -1,0 +1,2 @@
+language: aspnetcore3
+fprocess: dotnet ./Server.dll
